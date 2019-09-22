@@ -5,7 +5,10 @@ Dark mode (theme) for bootstrap 4
 ## Demo
 
 <https://heminei.github.io/bootstrap-dark/examples/album.html>
+
 <https://heminei.github.io/bootstrap-dark/examples/checkout.html>
+
+<https://heminei.github.io/bootstrap-dark/examples/components.html>
 
 ## Required
 
