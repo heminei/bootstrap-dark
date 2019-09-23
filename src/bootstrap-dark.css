@@ -153,6 +153,11 @@ a {
   background-color: #43494E;
 }
 
+.page-item.disabled .page-link {
+  background-color: #343a40;
+  border-color: #454d55;
+}
+
 .progress {
   background-color: #343a40;
 }

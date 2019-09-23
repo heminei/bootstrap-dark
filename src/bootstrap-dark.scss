@@ -1,8 +1,8 @@
-$element-bg: #343a40;
-$element-bg-hover: #43494E;
-$element-border-color: #454d55;
-$card-bg: #424242;
-$jumbotron-bg: #212121;
+$bd-element-bg: #343a40 !default;
+$bd-element-bg-hover: #43494E !default;
+$bd-element-border-color: #454d55 !default;
+$bd-card-bg: #424242 !default;
+$bd-jumbotron-bg: #212121 !default;
 
 body {
     background-color: #303030;
@@ -26,7 +26,7 @@ a {
 }
 
 .dropdown-menu {
-    background-color: $element-bg;
+    background-color: $bd-element-bg;
     color: #fff;
 }
 
@@ -36,12 +36,12 @@ a {
     &:hover,
     &.active {
         color: inherit;
-        background-color: lighten($element-bg, 10%);
+        background-color: lighten($bd-element-bg, 10%);
     }
 }
 
 .breadcrumb {
-    background-color: $element-bg;
+    background-color: $bd-element-bg;
 }
 
 .breadcrumb-item {
@@ -51,23 +51,23 @@ a {
 }
 
 .nav-tabs {
-    border-bottom-color: $element-border-color;
+    border-bottom-color: $bd-element-border-color;
 
     .nav-link {
         color: #fff;
-        background-color: $element-bg;
+        background-color: $bd-element-bg;
 
         &:hover,
         &.active {
             color: inherit;
-            background-color: $element-bg-hover;
-            border-color: $element-border-color;
+            background-color: $bd-element-bg-hover;
+            border-color: $bd-element-border-color;
         }
     }
 }
 
 .card {
-    background-color: $card-bg;
+    background-color: $bd-card-bg;
 
     &.bg-light {
         color: #383d41;
@@ -75,19 +75,19 @@ a {
 }
 
 .jumbotron {
-    background-color: $jumbotron-bg;
+    background-color: $bd-jumbotron-bg;
 }
 
 .form-control,
 .form-control:active,
 .form-control:focus {
-    border-color: $element-border-color;
-    background-color: $element-bg;
+    border-color: $bd-element-border-color;
+    background-color: $bd-element-bg;
     color: #fff;
 
     /*Change text in autofill textbox */
     &:-webkit-autofill {
-        -webkit-box-shadow: 0 0 0 50px $element-bg inset;
+        -webkit-box-shadow: 0 0 0 50px $bd-element-bg inset;
         /* Change the color to your own background color */
         -webkit-text-fill-color: #fff;
     }
@@ -98,26 +98,26 @@ a {
 }
 
 .custom-select {
-    border-color: $element-border-color;
+    border-color: $bd-element-border-color;
     background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23fff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
-    background-color: $element-bg;
+    background-color: $bd-element-bg;
     color: #fff;
 }
 
 .custom-control-label {
     &::before {
-        background-color: $element-bg;
+        background-color: $bd-element-bg;
     }
 }
 
 .input-group-text {
-    border-color: $element-border-color;
-    background-color: lighten($element-bg, 10%);
+    border-color: $bd-element-border-color;
+    background-color: lighten($bd-element-bg, 10%);
     color: #fff;
 }
 
 .list-group-item {
-    background-color: $element-bg;
+    background-color: $bd-element-bg;
 }
 
 .list-group-item-action {
@@ -125,24 +125,33 @@ a {
 
     &:not(.active):hover {
         color: inherit;
-        background-color: $element-bg-hover;
+        background-color: $bd-element-bg-hover;
     }
 
     &.disabled {
-        background-color: $element-bg;
+        background-color: $bd-element-bg;
     }
 }
 
 .page-link {
-    background-color: $element-bg;
-    border-color: $element-border-color;
+    background-color: $bd-element-bg;
+    border-color: $bd-element-border-color;
 
     &:hover {
-        border-color: $element-border-color;
-        background-color: $element-bg-hover;
+        border-color: $bd-element-border-color;
+        background-color: $bd-element-bg-hover;
+    }
+}
+
+.page-item {
+    &.disabled {
+        .page-link {
+            background-color: $bd-element-bg;
+            border-color: $bd-element-border-color;
+        }
     }
 }
 
 .progress {
-    background-color: $element-bg;
+    background-color: $bd-element-bg;
 }
