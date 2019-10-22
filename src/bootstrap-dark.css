@@ -64,6 +64,18 @@ a {
   color: #383d41;
 }
 
+.modal-content {
+  background-color: #424242;
+}
+
+.close {
+  color: #fff;
+}
+
+.close:hover {
+  color: #fff;
+}
+
 .jumbotron {
   background-color: #212121;
 }

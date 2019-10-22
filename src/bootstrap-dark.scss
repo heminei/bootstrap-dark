@@ -2,6 +2,7 @@ $bd-element-bg: #343a40 !default;
 $bd-element-bg-hover: #43494E !default;
 $bd-element-border-color: #454d55 !default;
 $bd-card-bg: #424242 !default;
+$bd-modal-content-bg: #424242 !default;
 $bd-jumbotron-bg: #212121 !default;
 
 body {
@@ -71,6 +72,18 @@ a {
 
     &.bg-light {
         color: #383d41;
+    }
+}
+
+.modal-content {
+    background-color: $bd-modal-content-bg;
+}
+
+.close {
+    color: #fff;
+
+    &:hover {
+        color: #fff;
     }
 }
 
